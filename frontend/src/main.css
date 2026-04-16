@@ -1,0 +1,52 @@
+:root {
+  --bg: #0b1220;
+  --card: #121b2e;
+  --text: #e8eefc;
+  --muted: #aab6db;
+  --primary: #4f8cff;
+  --danger: #ff5a6f;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+body {
+  margin: 0;
+}
+
+/* Dark theme polish (Bootstrap handles most styles). */
+html[data-bs-theme='dark'] body {
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(79, 140, 255, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(255, 90, 111, 0.12), transparent 55%),
+    #0b1220;
+}
+
+/* Light theme: keep it clean and professional. */
+html[data-bs-theme='light'] body {
+  background: linear-gradient(180deg, #f6f8fb 0%, #ffffff 55%, #ffffff 100%);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.auth-card {
+  max-width: 520px;
+  margin: 8vh auto 0;
+}
+
+.muted-small {
+  opacity: 0.8;
+}
+
+.mic-transcript {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+html[data-bs-theme='light'] .mic-transcript {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
